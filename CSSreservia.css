@@ -1,0 +1,202 @@
+body
+{
+    font-family: 'Raleway';
+}    
+
+.here 
+{
+    background-color:#DEEBFF;
+    border-radius: 20px;
+    padding: 10px 10px 10px 10px ;
+}
+
+#start
+{
+    display: flex;
+
+}
+
+.log
+{
+   height: fit-content;
+   padding-top: 40px;
+   width: 5%;
+
+} 
+
+.log1
+{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+    margin: 30px;
+}
+
+#menu
+{
+    display: flex;
+    padding-top: 30px; 
+    
+}  
+
+.pic
+{
+    max-width: 40%;
+}  
+
+.log1
+{
+    justify-content: space-between;
+    padding-top: 40px;
+    margin: 30px;
+}
+
+.flag
+{
+    border-top: 1px solid #0065FC ;
+    color: #0065FC;
+}
+
+.filtre
+{
+   text-decoration: none;
+   color: none;
+   margin: 5px;
+   padding: 4px;
+   border-radius: 40px /40px;
+   border: solid #F2F2F2 2px;
+}
+
+.button
+{
+   text-decoration: none;
+   color: white;
+   margin: 5px;
+   padding: 4px;
+   border-radius: 40px /40px;
+   border: solid #F2F2F2 1px;
+   background-color: #0065FC ;
+   border-left: solid 1px;
+ 
+}
+#hotel
+{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+}
+
+
+#hebergement
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #F2F2F2;
+    width: 60%;
+    overflow: hidden;
+    align-content: space-around;
+}
+
+.photo
+{
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 6px 6px 6px grey;
+}  
+
+.photocorner
+{
+    display: flex;
+    flex-direction: row;
+}  
+
+.pic
+{
+    background-color: #F2F2F2;
+    border-radius: 10px;
+}
+
+
+#populaire 
+{
+    display: flex;
+    flex-direction: column;
+    background-color: #F2F2F2;
+    border-radius: 12px;
+    overflow: hidden; 
+    width: 30%;
+    height: 30%;
+}
+
+a
+{
+    text-decoration: none;
+    color: black;
+} 
+
+.filtre:hover 
+{
+    text-decoration: none;
+    color:white;
+    background-color: #0065FC ;
+
+} 
+
+#conteneur
+{
+    display: flex;  
+}
+
+#activités
+{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    
+}
+.corner1
+{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 80%;
+
+}
+
+.chariot
+{
+    height: 40%;
+    width: 30%;
+    overflow: hidden;
+}
+
+.blue
+{
+    color: #0065FC;
+}
+
+.grey
+{
+    color: #F2F2F2;
+}
+
+#footer
+{
+    display: flex;
+    justify-content: space-around;
+    background-color: #F2F2F2;  
+}
+ 
+ul {
+    list-style:none;
+    margin-left:0;
+    padding-left:0;
+}
+
+li {
+    margin-bottom:15px;/* à adapter */
+}
+
+
+
