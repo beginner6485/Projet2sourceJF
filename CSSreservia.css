@@ -13,45 +13,36 @@ body
 #start
 {
     display: flex;
-
+    justify-content: space-between;
+    padding-top: 40px;
 }
 
 .log
 {
-   height: fit-content;
-   padding-top: 40px;
-   width: 5%;
+   width: 20%;
 
 } 
 
 .log1
 {
-    display: flex;
     justify-content: space-between;
     padding-top: 40px;
     margin: 30px;
 }
 
-#menu
-{
-    display: flex;
-    align-content: flex-end;
-    padding-top: 30px; 
-   
-    
-}  
 
 .pic
 {
-    max-width: 40%;
+    max-width: 95%;
 }  
 
-.log1
+.pic1
 {
-    justify-content: space-between;
-    padding-top: 40px;
-    margin: 30px;
-}
+    max-width: 40%;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}  
+
 
 .flag
 {
@@ -84,10 +75,9 @@ body
 #hotel
 {
     display: flex;
-    flex-direction:row;
     justify-content: space-between;
+    width: 100%;
 }
-
 
 #hebergement
 {
@@ -98,7 +88,6 @@ body
     background-color: #F2F2F2;
     width: 60%;
     overflow: hidden;
-    align-content: space-around;
 }
 
 .photo
@@ -106,26 +95,45 @@ body
     background-color: white;
     border-radius: 12px;
     box-shadow: 6px 6px 6px grey;
+    width: 25%;
+    height: 25%;
+    margin: 20px;
+    overflow: hidden;
+    padding-left: 8px;
+    padding-bottom: 20px;
+    padding-top: 5px;
 }  
+#titre
+{
+   background-color: #F2F2F2;
+   border-radius: 12px;
+   width: 60%;
+}  
+
+.indoor
+{
+    width: 90%;
+    height: 55%;
+} 
 
 .photocorner
 {
     display: flex;
     flex-direction: row;
-    
 }  
 
 .pic
 {
     background-color: #F2F2F2;
     border-radius: 10px;
-    
+    /*float: left;*/
+    object-fit: cover;
 }
 
 .yop
 {
-    float: left; 
-    
+    width: 23%;
+    height: 13%;
 }
 
 #populaire 
@@ -136,9 +144,24 @@ body
     border-radius: 12px;
     overflow: hidden; 
     width: 30%;
-    height: 30%;
-    align-content: space-around;
 }
+
+.inside
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.corner
+{
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 6px 6px 6px grey;
+    margin: 10px;
+    padding-left: 8px;
+    width:80%;
+} 
 
 a
 {
@@ -162,37 +185,52 @@ a
 #activités
 {
     display: flex;
-    flex-direction: column;
-    
-}
-.corner2
-{
-    display: flex;
-    flex-direction: column;
-    width: 80%;
-    height: 90%;
+    flex-direction: row;
+    width: 100%;
+    overflow: hidden;
 }
 
-.corner3
+#partie
 {
-    width: 80%;
-    height: 40%;
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+   
 }
 
 #ticket1
 {
-    width: 30%;
-    height: 50%;
-    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+}
+.corner2
 
+
+.two
+{
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+} 
+.vieux
+{
+    width: 20%;
+} 
+
+
+.two
+{
+    display: flex;
+    flex-direction: column; 
+    height: 0%;
 }
 
-#ticket2
-{
-    width: 30%;
-    height: 50%;
-    overflow: hidden;
 
+#partie2
+{
+    display: flex;
+    flex-direction: row;
+    width: 50%;   
 }
 
 
