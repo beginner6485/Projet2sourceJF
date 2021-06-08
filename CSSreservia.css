@@ -15,6 +15,32 @@ body
    width: 20%;
 } 
 
+.maple
+{
+    background-color: #F2F2F2;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    padding: 10px;
+} 
+#barre
+{
+    width: 200px;
+    height: 30px;
+    color: #F2F2F2;
+} 
+
+.blue
+{
+    color: #0065FC;
+}
+
+.point
+{
+    border-radius: blue 5px;
+    
+}
+
+
 .log1
 {
     justify-content: space-between;
@@ -24,11 +50,11 @@ body
 
 .button
 {
-   text-decoration: none;
    color: white;
-   margin: 5px;
-   padding: 4px;
-   border-radius: 40px /40px;
+   padding: 10px;
+   padding-right: 10px;
+   border-top-right-radius: 10px;
+   border-bottom-right-radius: 10px;
    border: solid #F2F2F2 1px;
    background-color: #0065FC ;
    border-left: solid 1px;
@@ -50,9 +76,8 @@ body
    text-decoration: none;
    color: none;
    margin: 5px;
-   padding: 4px;
+   padding-right: 10px;
    border-radius: 40px /40px;
-   border: solid #F2F2F2 2px;
 }
 
 .here 
@@ -84,8 +109,9 @@ body
     display: flex;
     flex-wrap: wrap;
     border-radius: 12px;
-    width: 45%;
+    width: 100%;
     height: 20%;
+    justify-content: space-around;
 }
 
 .photo
@@ -93,7 +119,7 @@ body
     background-color: white;
     border-radius: 12px;
     box-shadow: 6px 6px 6px grey;
-    width: 65%;
+    width: 30%;
     height: 20%;
 }  
 
@@ -106,12 +132,6 @@ body
     padding-left: 5px;
     padding-top: 5px;
 }
-
-.blue
-{
-    color: #0065FC;
-}
-
 
 .indoor
 {
@@ -196,11 +216,12 @@ a
     flex-direction: row;
     width: 100%;
     height: 60%;
+    justify-content: space-around;
 }
 
 .vieux2
 {
-    width: 50%;
+    width:30%;
 } 
 
 .corner22
@@ -214,7 +235,6 @@ a
 {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   width: 35%;
   height: 90;
   object-fit: cover;
@@ -248,5 +268,56 @@ li {
     margin-bottom:15px;/* à adapter */
 }
 
+@media screen and (max-width: 768px)
+{
+    
+    nav ul
+    {
+        flex-direction: column;
+    } 
+
+    #menu
+    {
+       font-size: 15px;
+    } 
+
+    #hotel
+    {
+        flex-direction: column;
+    } 
+
+    #java
+    {
+        width: 100%;
+    } 
+
+    #populaire
+    {
+        flex-direction: row;
+        width: auto;
+    } 
+
+    #bali
+    {
+        width: 100%;
+    } 
+
+    .inside
+    {
+        flex-direction: row;
+    } 
+
+    .corner
+    {
+        width: auto;
+        
+    } 
 
 
+
+
+
+
+    
+
+}
