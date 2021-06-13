@@ -26,7 +26,7 @@ body
 {
     width: 200px;
     height: 30px;
-    color: #F2F2F2;
+    border: 2px solid #F2F2F2 ;
 } 
 
 .blue
@@ -37,7 +37,6 @@ body
 .point
 {
     border-radius: blue 5px;
-    
 }
 
 
@@ -60,7 +59,7 @@ body
    border-left: solid 1px;
 }
 
-.flag
+.flag:hover
 {
     border-top: 1px solid #0065FC ;
     color: #0065FC;
@@ -78,6 +77,7 @@ body
    margin: 5px;
    padding-right: 10px;
    border-radius: 40px /40px;
+   border: 2px solid #F2F2F2;
 }
 
 .here 
@@ -93,14 +93,12 @@ body
     flex-direction:row;
     justify-content: space-between;
     width: 100%;
-    height: 50%;
 }
 
 #java
 {
     background-color: #F2F2F2;
-    width: 60%;
-    height: 20%;
+    width: 65%;
     border-radius: 12px; 
 }
 
@@ -110,7 +108,7 @@ body
     flex-wrap: wrap;
     border-radius: 12px;
     width: 100%;
-    height: 20%;
+    height: 80%;
     justify-content: space-around;
 }
 
@@ -120,7 +118,7 @@ body
     border-radius: 12px;
     box-shadow: 6px 6px 6px grey;
     width: 30%;
-    height: 20%;
+    height: 32%;
 }  
 
 .pic
@@ -148,11 +146,11 @@ body
 .pic1
 {
     width: 50%;
-    height: 99%;
     object-fit: cover;
     border-bottom-left-radius: 10px;
     border-top-left-radius: 10px;
 }  
+
 .yop
 {
     width: 23%;
@@ -165,16 +163,7 @@ body
     flex-direction: column;
     background-color: #F2F2F2;
     border-radius: 12px;
-    width: 30%;
-    height: 40%; /*test*/
-}
-
-#bali
-{
-    background-color: #F2F2F2;
-    width: 90%; /*test*/
-    height: 30%;
-    border-radius: 12px; 
+    width: 31%;
 }
 
 .corner
@@ -183,9 +172,9 @@ body
     background-color: white;
     border-radius: 12px;
     box-shadow: 6px 6px 6px grey;
-    margin: 10px;
+    margin:auto;
     padding-left: 8px;
-    width: 95%;
+    width: 85%;
 } 
 
 
@@ -193,8 +182,8 @@ body
 {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-
+    width: 100%;
+    height: 80%;
 }
 
 a
@@ -221,13 +210,17 @@ a
 
 .vieux2
 {
-    width:30%;
+    width:25%;
+} 
+
+.vieuxenfant
+{
+
 } 
 
 .corner22
 {
     width: 90%;
-    height: 50%;
     object-fit: cover;
 } 
 
@@ -235,8 +228,7 @@ a
 {
   display: flex;
   flex-direction: column;
-  width: 35%;
-  height: 90;
+  width: 25%;
   object-fit: cover;
 } 
 
@@ -268,7 +260,7 @@ li {
     margin-bottom:15px;/* à adapter */
 }
 
-@media screen and (max-width: 768px)
+@media screen and (max-width: 750px)
 {
     
     nav ul
