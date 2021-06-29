@@ -20,6 +20,12 @@ h6
    width: 20%;
 } 
 
+#menu
+{
+    display: flex;
+    flex-direction: row;
+}
+
 .maple
 {
     background-color: #F2F2F2;
@@ -27,6 +33,7 @@ h6
     border-top-left-radius: 10px;
     padding: 10px;
 } 
+
 #barre
 {
     width: 200px;
@@ -220,7 +227,7 @@ a
 {
     display: flex;
     flex-direction: row;
-    height: 50%;
+    height: 600px;
     justify-content: space-around;
 }
 
@@ -230,21 +237,23 @@ a
     border-radius: 20px ;
 }
 
+.enfant1
+{
+  
+    justify-content: space-between;
+    height: 40%;
+    border-radius: 7px;
+    box-shadow: 5px 5px 5px 5px grey;
+    overflow: hidden;
+}
+
 .vieux
 {
    width: 100%;
-   height: 50%;
+   height: 90%;
    border-radius: 7px;
     box-shadow: 5px 5px 5px 5px grey;
-}
-
-.two
-{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 60%;
-    object-fit: cover;
+    overflow: hidden;
 }
 
 .corner22
@@ -256,9 +265,11 @@ a
 
 .corner32
 {
-    height: 45%;
+    height: 80%;
+    width: 100%;
     object-fit: cover;
 } 
+
 .grey
 {
     color: #F2F2F2;
@@ -288,25 +299,51 @@ li {
         width: 80%;
     } 
    
+    #menu
+    {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: flex-end;
+        font-size: 15px;
+    } 
+
+    #telephone
+    {
+        display: flex;
+        align-content: space-around;
+    } 
+
+    .flag:hover
+    {
+    border-bottom: 1px solid #0065FC ;
+    color: #0065FC;
+    }
+
     .log
     {
         min-width: 50%;
     } 
 
-    nav ul
+    .log1
     {
-        
+        padding-top: 0%;
+    }
+
+    .phone
+    {
+        color: #0065FC;
+    } 
+
+    .vision
+    {
+      display: flex;
+      flex-direction: row;
     } 
 
     #conteneur
     {
         flex-wrap: wrap;
         max-width: 80%;
-    } 
-
-    #menu
-    {
-       font-size: 15px;
     } 
 
     #hotel
@@ -316,46 +353,52 @@ li {
 
     #hebergement
     {
-        flex-direction: column;
-        justify-content: space-between;
-        width: 95%;
-        
+        flex-direction: row;
+        align-content: space-between;
+        width: 95%;  
+        margin: auto;
     } 
 
     .photo
     {
         width: 100%;
-        height: 20%;
+        height: 200px;
+    } 
+
+    .pic
+    {
+        width: 97%;
+        height: 60%;
     } 
 
     #java
     {
         width: 100%;
+        height: 1800px;
     } 
 
     #populaire
     {
         justify-content: space-between;
         width: 100%;
-    
+        height: 650px;
     } 
     
    .inside
     {
-        width: 90%;
-        height: 30%;  
+        width: 95%;
+        height: 90%;  
+        margin: auto;
     } 
 
     .corner
     {
-        width: 90%;
-        height: 30%;
+        width: 95%;
     } 
 
     .pic1
     {
         width: 40%;
-        height: 30%;
     } 
 
     #activités2
@@ -363,12 +406,65 @@ li {
         flex-direction: column;
     } 
 
+    .mere
+    {
+        flex-direction: column;
+        width: 100%;
+    } 
+
     #footer
     {
         flex-direction: column;
         
     } 
+}
 
+    @media screen and (min-width : 768px) and (max-width : 991px)
+    {
+        #logo
+        {
+            width: 80%;
+        } 
+
+        #hotel
+        {
+            flex-direction: column;
+            height: 1200px;
+        } 
+
+        #java
+        {
+            width: 95%;
+            height: 650px;
+        } 
+
+        #hebergement
+        {
+            height: 600px;
+        } 
+
+
+
+
+        .inside
+        {
+            height: 60%;
+        }  
+
+        #populaire
+        {
+            width: 95%;
+            height: 600px;
+        }
+
+        #activités2
+        {
+            height: 400px;
+        }
+
+
+
+    }
 
 
 
@@ -376,4 +472,3 @@ li {
 
     
 
-}
