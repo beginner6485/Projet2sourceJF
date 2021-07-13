@@ -11,14 +11,25 @@ h6
 #start
 {
     display: flex;
-    justify-content: space-between;
     padding-top: 40px;
+    align-items: center;
 }
 
 .log
 {
    width: 20%;
 } 
+
+.navigation
+{
+    margin-left: auto;
+} 
+
+#mobile
+{
+    margin-right: 2em;
+}
+
 
 #menu
 {
@@ -56,8 +67,12 @@ h6
 .log1
 {
     justify-content: space-between;
-    padding-top: 40px;
     margin: 30px;
+}
+
+h6
+{
+    display: inline;
 }
 
 .button
@@ -76,6 +91,16 @@ h6
 {
     border-top: 1px solid #0065FC ;
     color: #0065FC;
+}
+
+.flag
+{
+    padding-top: 3em;
+}
+
+.esp
+{
+    margin-right: 3em;
 }
 
 #conteneur
@@ -134,7 +159,8 @@ h6
 {
     background-color: white;
     border-radius: 12px;
-    box-shadow: 6px 6px 6px grey;
+    box-shadow: 6px 6px 6px lightgrey;
+    padding-left: 1%;
     width: 30%;
     height: 32%;
 }  
@@ -143,9 +169,8 @@ h6
 {
     border-radius: 10px;
     object-fit: cover;
-    width: 90%;
-    height: 60%;
-    padding-left: 5px;
+    width: 95%;
+    height: 55%;
     padding-top: 5px;
 }
 
@@ -207,7 +232,7 @@ h6
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 70%;
+    height: 80%;
 }
 
 a
@@ -223,11 +248,11 @@ a
     background-color: #0065FC ;
 } 
 
-#activités2
+#activites2
 {
     display: flex;
     flex-direction: row;
-    height: 600px;
+    height: 500px;
     justify-content: space-around;
 }
 
@@ -235,23 +260,30 @@ a
 {
     width: 20%;
     border-radius: 20px ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-.enfant1
+.colonne
 {
-  
-    justify-content: space-between;
-    height: 40%;
-    border-radius: 7px;
-    box-shadow: 5px 5px 5px 5px grey;
-    overflow: hidden;
+    height: 90%;
 }
 
 .vieux
 {
    width: 100%;
-   height: 90%;
+   height: 100%;
    border-radius: 7px;
+    box-shadow: 5px 5px 5px 5px grey;
+    overflow: hidden;
+}
+
+.enfant1
+{
+    justify-content: space-between;
+    height: 45%;
+    border-radius: 7px;
     box-shadow: 5px 5px 5px 5px grey;
     overflow: hidden;
 }
@@ -294,9 +326,17 @@ li {
 
 @media screen and (max-width: 750px)
 {
+    #start
+    {
+        flex-wrap: wrap;
+        width: 100%;
+        height: auto;
+        justify-content: center;
+    } 
+
     #logo
     {
-        width: 80%;
+        width: 40%;
     } 
    
     #menu
@@ -307,16 +347,46 @@ li {
         font-size: 15px;
     } 
 
+    .navigation
+    {
+     width: 100%;
+     text-align: center; 
+     order: 2;
+    }
+
+    .vieux
+    {
+        width: 100%;
+        height: 45%;
+    }
+   
+    .corner22
+    {
+        width: 100%;
+        height: 85%;
+    }
+
     #telephone
     {
         display: flex;
         align-content: space-around;
-    } 
+    }
+
+    .esp
+    {
+        padding-right: 4em;  
+      }
+
+    .flag
+    {
+        border-bottom: 2px solid #F2F2F2;
+      }
+
 
     .flag:hover
     {
-    border-bottom: 1px solid #0065FC ;
-    color: #0065FC;
+        border-bottom: 2px solid #0065FC ;
+        color: #0065FC;
     }
 
     .log
@@ -326,7 +396,7 @@ li {
 
     .log1
     {
-        padding-top: 0%;
+        order: 1;
     }
 
     .phone
@@ -334,17 +404,18 @@ li {
         color: #0065FC;
     } 
 
-    .vision
-    {
-      display: flex;
-      flex-direction: row;
-    } 
-
     #conteneur
     {
         flex-wrap: wrap;
         max-width: 80%;
     } 
+    
+    .texte
+    {
+        margin-left: 3em;
+        padding-left: 6px;
+        padding-top: 2em;
+    }
 
     #hotel
     {
@@ -356,6 +427,7 @@ li {
         flex-direction: row;
         align-content: space-between;
         width: 95%;  
+        height: 1300px;
         margin: auto;
     } 
 
@@ -374,7 +446,7 @@ li {
     #java
     {
         width: 100%;
-        height: 1800px;
+        height: auto;
     } 
 
     #populaire
@@ -401,15 +473,22 @@ li {
         width: 40%;
     } 
 
-    #activités2
+    #activites2
     {
         flex-direction: column;
+        height: 1950px;
     } 
 
     .mere
     {
         flex-direction: column;
         width: 100%;
+        margin-bottom: auto;
+    } 
+
+    .colonne
+    {
+       height: auto;
     } 
 
     #footer
@@ -419,7 +498,7 @@ li {
     } 
 }
 
-    @media screen and (min-width : 768px) and (max-width : 991px)
+    @media screen and (min-width : 751px) and (max-width : 991px)
     {
         #logo
         {
@@ -435,32 +514,73 @@ li {
         #java
         {
             width: 95%;
-            height: 650px;
+            height: 620px;
+            margin: auto;
         } 
 
         #hebergement
         {
-            height: 600px;
+            height: 490px;
         } 
 
-
-
+        .photo
+        {
+            height: 40%;
+            width: 30%;
+        } 
 
         .inside
         {
-            height: 60%;
+            height: 75%;
         }  
 
         #populaire
         {
             width: 95%;
-            height: 600px;
+            height: 490px;
+            margin: auto;
         }
 
-        #activités2
+        #activites2
         {
-            height: 400px;
+            height: 350px;
         }
+
+        .vieux
+        {
+            width: 100%;
+            height: 100%;
+        }
+
+        .mere
+        {
+            width: 20%;
+        }
+
+        .colonne
+        {
+            height: 90%;
+            
+        }
+        
+        .enfant1
+        {
+            height: 46%;
+
+        }
+
+        .corner32
+        {
+            height: 72%;
+            width: 100%;
+        }
+        
+        .corner22
+        {
+            height: 85%;
+            width: 100%;
+        }
+
 
 
 
