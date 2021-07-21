@@ -90,7 +90,6 @@ h6
 {
     border-top: 1px solid #0065FC ;
     color: #0065FC;
- 
 }
 
 .flag
@@ -250,7 +249,7 @@ a
     background-color: #0065FC ;
 } 
 
-#activites2
+#activites
 {
     display: flex;
     flex-direction: row;
@@ -490,7 +489,7 @@ li {
         width: 40%;
     } 
 
-    #activites2
+    #activites
     {
         flex-direction: column;
         height: auto;
@@ -581,7 +580,7 @@ li {
             margin: auto;
         }
 
-        #activites2
+        #activites
         {
             height: 350px;
         }
