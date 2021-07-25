@@ -28,6 +28,7 @@ h6
 #mobile
 {
     margin-right: 2em;
+    padding-top: 2em;
 }
 
 #menu
@@ -333,6 +334,7 @@ li {
         width: 100%;
         height: auto;
         justify-content: center;
+        align-items: center;
     } 
 
     #logo
@@ -358,7 +360,7 @@ li {
 
     .vieux
     {
-        width: 100%;
+        width: 95%;
         height: 8em;
         box-shadow: 2px 2px 2px 2px lightgrey;
     }
@@ -373,7 +375,7 @@ li {
     {
         margin-bottom:1em;
         box-shadow: 2px 2px 2px 2px lightgrey;
-    }
+        width: 95%;
     }
 
     .corner32
@@ -393,6 +395,7 @@ li {
         flex-direction: column;
         width: 49%;
         margin: 0em;
+        display:inline-block;
       }
 
 
@@ -411,6 +414,7 @@ li {
     .log1
     {
         order: 1;
+        margin-left: 7em;
     }
 
     .phone
@@ -424,6 +428,11 @@ li {
         max-width: 80%;
     } 
     
+    #text3
+    {
+        width: 100%;
+    } 
+
     .texte
     {
         margin-left: 3em;
@@ -439,14 +448,14 @@ li {
         flex-direction: row;
         align-content: space-between;
         width: 95%;  
-        height: 1300px;
+        height: 1000px;
         margin: auto;
     } 
 
     .photo
     {
         width: 100%;
-        height: 200px;
+        height: 160px;
     } 
 
     .pic
@@ -455,7 +464,7 @@ li {
         border-top-left-radius: 15px;
         border-top-right-radius: 15px;
         width: 99%;
-        height: 60%;
+        height: 55%;
         
     } 
 
@@ -463,6 +472,7 @@ li {
     {
         width: 100%;
         height: auto;
+        background-color: white;
     } 
 
     #populaire
@@ -505,6 +515,7 @@ li {
     .colonne
     {
        margin-bottom: 1em;
+       align-items: center;
     } 
 
     #footer
@@ -536,7 +547,9 @@ li {
         .flag
         {
             margin-right: 2em;
-            padding-top: 2em;
+            padding-top: 0em;
+            padding-right: 2em;
+            margin: 0em;
         } 
 
         #hotel
