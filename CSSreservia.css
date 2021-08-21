@@ -1,7 +1,12 @@
 body
 {
-    font-family: 'Raleway';
+    font-family: 'Raleway','Shrikhand';
 }  
+
+h3
+{
+    padding-left: 1em;
+}
 
 h6
 {
@@ -175,6 +180,12 @@ h6
     padding-top: 5px;
 }
 
+.icone
+{
+    float: right;
+    padding-right: 1em;
+}
+
 .indoor
 {
     width: 90%;
@@ -199,6 +210,11 @@ h6
 {
     margin: auto;
     padding-left: 6px;
+}
+
+.coin
+{
+    width: 50%;
 }
 
 .yop
@@ -434,7 +450,7 @@ li {
 
     .texte
     {
-        margin-left: 3em;
+        margin: auto;
     }
 
     #hotel
@@ -578,7 +594,7 @@ li {
         .texte
         {
             margin: 3px;
-        } 
+        }
 
         .inside
         {
